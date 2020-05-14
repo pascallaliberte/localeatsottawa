@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     resources :locations
   end
   
+  get 'map', to: 'map#index'
+  
   resources :tickets do
     collection do
       get :thank_you
